@@ -35,11 +35,6 @@ html::-webkit-scrollbar-thumb{
 background-color: linear-gradient(#98ddca, #28b5b5);
 }
 
-/*body{
-height:300rem;
-}
-*/
-
 header{
   width: 100%;
   display: flex;
@@ -97,7 +92,33 @@ header #menu{
   display: none;
 }
 
+.login-form{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.login-form form{
+  width:35rem;
+  background: #fff;
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  border-radius:  .5rem;
+  box-shadow: 0 .1rem .3rem #333;
+  position: relative;
+}
+
+.login-form form h3{
+  font-size: 3rem;
+  color: #28b5b5;
+  padding:1rem 0;
+}
 
 
 
@@ -122,14 +143,40 @@ header #menu{
   header #menu{
    display: block;
   }
+
   header .nav_bar{
     position: fixed;
-    top: 6.4rem; left: 0;
+    top:-120%; left:0;
     width: 100%;
     background:linear-gradient( #c7ffd8 , #98ded9 );
   }
+
   header .nav_bar ul{
     flex-flow:column;
     padding: 2rem 0;
+  }
+
+  header .nav_bar ul li{
+    margin:1.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  header .nav_bar ul li a{
+    font-size: 2.5rem;
+    display: block;
+  }
+
+  header .nav_bar ul li a.active,
+  header .nav_bar ul li a.hover{
+    color: #046582;
+  }
+
+  .fa-times{
+    transform: rotate(180deg);
+  }
+
+  header .nav_bar.nav-toggle{
+    top:6.4rem;
   }
 }
