@@ -348,15 +348,45 @@ header #menu{
   background: #333;
 }
 
-
-
-
-
-
-
-
-
 /*--------course section ends----------*/
+
+
+/*--------teacher section starts----------*/
+
+.teacher{
+  text-align: center;
+
+}
+
+.teacher p{
+  font-size: 1.8rem;
+  color: #666;
+  width: 65rem auto;
+  margin: 1rem auto;
+}
+
+#teacher .teaheading {
+  font-size: 4rem;
+  padding-top: 5rem;
+  margin: 2rem 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  color: #00B894;
+}
+
+.teacherimg{
+  background-position: bottom;
+  padding-top: 80px;
+  margin-top: 50px;
+
+}
+
+
+/*--------teacher section ends----------*/
+
+
+
 
 /* media queries */
 
